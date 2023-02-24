@@ -31,19 +31,23 @@ Once that's working, get your validations set up.
 
 ## Validations
 
-* Name must be present
-* Email must be present and should be properly formatted
-* Phone number should be properly formatted
-* Phone type should be selected if a phone number is present
-* Bio should have a character limit of 280 characters
+You will validate the following inputs.
+
+* Name is required, can not be empty.
+* Email is required, can not be empty, and should be properly formatted.
+* Phone number is optional, if presented, it should be properly formatted.
+* Phone type must be selected if a phone number is presented.
+* Bio should have a character limit of 280 characters.
 
 The name and bio field can be validated in vanilla JS but validating email and
 phone numbers is a bit more complex. There are multiple methods to implement
 these: do a bit of Googling and find a method you like. (You also might want to
-check out [regular expressions][regex] for pattern matching.)
+check out [regular expressions][regex] for pattern matching)
 
 Your form should block submission and display a descriptive error message
 whenever validations fail.
+
+Display error messages under the input fields that failed validation and make the color of the error messages red.
 
 ## Bonus
 
